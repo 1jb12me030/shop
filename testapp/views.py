@@ -199,4 +199,10 @@ class ShopView(APIView):
                 print(e)
                 return Response({'message':'Something went wrong'},status=status.HTTP_400_BAD_REQUEST)
     
+def index1_view(request):
+      #shops1 = shops1.objects.all()
+      return render(request,'testapp/index1.html')
+
+def index_view(request):
+    return render(request,'testapp/index.html')
     

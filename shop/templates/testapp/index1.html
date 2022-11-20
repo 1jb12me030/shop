@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+
+
+    <div class='container'>
+    <h1> All Shop Details</h1><hr>
+    
+    <table border=5>
+        <thead>
+            <th>Shop Number</th>
+            <th>Shop Name</th>
+            <th>Shop location</th>
+            <th>Shop review</th>
+            
+            <th>Product Discount</th>
+    
+            <th>Shop Phone</th>
+            <th>shop Address</th>
+            
+        </thead>
+        {%for shop in shoppers%}
+        <body>
+        
+        <tr>
+            <td>{{shop.eno}}</td>
+            <td>{{shop.ename}}</td>
+            <td>{{shop.elocation}}</td>
+            <td>{{shop.ereview}}</td>
+            
+            <td>{{product.ediscount}}</td>
+            
+            <td>{{shop.ephone}}</td>
+            <td>{{shop.eaddress}}</td>
+            
+        </tr>
+        
+    </table>
+    
+        
+            
+    
+    
+    
+    
+    
+        {%endfor%}
+    
+    
+        
+</body>
+</html>   
+        
+    
+    
+
+
+
+
+

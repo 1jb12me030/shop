@@ -6,3 +6,5 @@ from testapp.models import *
 admin.site.register(RegisterLocation)
 admin.site.register(Shop)
 
+admin.site.register(Shop1)
+

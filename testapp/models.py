@@ -57,4 +57,29 @@ class Shop(models.Model):
         return self.title
     
     
+class Shop1(models.Model) :
+    eno=models.IntegerField()
+    
+    ename=models.CharField(max_length=100, null=False)   
+    elocation = models.CharField(max_length=100)
+    
+    ereview = models.FloatField()
+    ediscount = models.CharField(max_length=50) 
+    
+    ephone = models.IntegerField(default=0)
+    eaddress = models.CharField(max_length=100)
+    
+
+    
+    
+    def __str__(self):
+         return '%s %s %s %s %s %s  ' %(self.ename,self.elocation,self.ereview,self.ediscount,self.ephone,self.eaddress)
+    
+    
+    
+    
+
+    
+    
+    
     
